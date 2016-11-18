@@ -19,6 +19,31 @@ namespace DI_10_DependencyProp_y_User_Controls.UserControls
 {
     public sealed partial class fichaAlumno : UserControl
     {
+
+
+        // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty NombreProperty =
+            DependencyProperty.Register("Nombre", typeof(string), typeof(fichaAlumno), new PropertyMetadata(""));
+
+        public static readonly DependencyProperty EdadProperty =
+            DependencyProperty.Register("Edad", typeof(int), typeof(fichaAlumno), new PropertyMetadata(0));
+
+        public string Nombre
+        {
+            get { return (string)GetValue(NombreProperty); }
+            set { SetValue(NombreProperty, value); }
+        }
+
+
+        public int Edad
+        {
+            get { return (int)GetValue(EdadProperty); }
+            set { SetValue(EdadProperty, value); }
+        }
+
+
+
+
         public fichaAlumno()
         {
             this.InitializeComponent();

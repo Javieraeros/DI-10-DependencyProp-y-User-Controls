@@ -8,10 +8,9 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
-
     <StackPanel>
-        <Image Name="Perfil" Source="..\Assets\anonimus.jpg" Width="500" Height="500"></Image>
-        <TextBlock Name="Nombre" Text="Yiii"></TextBlock>
-        <TextBlock Name="Apellidos" Text="Wooooo"></TextBlock>
+        <Image Name="Perfil" Source="..\Assets\anonimus.jpg" Width="auto" Height="auto"></Image>
+        <TextBlock Name="tblNombre" Text="yiii"></TextBlock>
+        <TextBlock Name="tblEdad" Text="wooo"></TextBlock>
     </StackPanel>
 </UserControl>
