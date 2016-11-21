@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
@@ -23,10 +24,14 @@ namespace DI_10_DependencyProp_y_User_Controls.UserControls
 
         // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NombreProperty =
-            DependencyProperty.Register("Nombre", typeof(string), typeof(fichaAlumno), new PropertyMetadata(""));
+            DependencyProperty.Register("Nombre", typeof(string), typeof(fichaAlumno), new PropertyMetadata("Defecto"));
 
         public static readonly DependencyProperty EdadProperty =
             DependencyProperty.Register("Edad", typeof(int), typeof(fichaAlumno), new PropertyMetadata(0));
+
+        public static readonly DependencyProperty ImagenProperty =
+            DependencyProperty.Register("Imagen", typeof(ImageSource), typeof(fichaAlumno), new PropertyMetadata(
+                new BitmapImage(new Uri("ms-appx://DI_10_DependencyProp_y_User_Controls/Assets/anonimus.jpg", UriKind.RelativeOrAbsolute))));
 
         public string Nombre
         {
@@ -39,6 +44,12 @@ namespace DI_10_DependencyProp_y_User_Controls.UserControls
         {
             get { return (int)GetValue(EdadProperty); }
             set { SetValue(EdadProperty, value); }
+        }
+
+        public ImageSource Imagen
+        {
+            get { return (ImageSource)GetValue(ImagenProperty); }
+            set { SetValue(ImagenProperty, value); }
         }
 
 

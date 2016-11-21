@@ -8,7 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <controls:fichaAlumno Nombre="Pepito" Edad="19"></controls:fichaAlumno>
-    </Grid>
+    <StackPanel Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <controls:fichaAlumno Nombre="Pepito" Edad="19" Imagen="../Assets/pablo.jpg"></controls:fichaAlumno>
+        <controls:fichaAlumno ></controls:fichaAlumno>
+    </StackPanel>
 </Page>

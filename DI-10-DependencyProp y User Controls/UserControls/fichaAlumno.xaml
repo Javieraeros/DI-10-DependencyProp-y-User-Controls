@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    Name="UserControl"
     d:DesignHeight="300"
     d:DesignWidth="400">
-    <StackPanel>
-        <Image Name="Perfil" Source="..\Assets\anonimus.jpg" Width="auto" Height="auto"></Image>
-        <TextBlock Name="tblNombre" Text="yiii"></TextBlock>
-        <TextBlock Name="tblEdad" Text="wooo"></TextBlock>
+    <StackPanel Orientation="Vertical">
+        <Image Name="Perfil" Source="{Binding ElementName=UserControl,Path=Imagen}" Width="auto" Height="auto"></Image>
+        <TextBlock Name="tblNombre" Text="{Binding ElementName=UserControl ,Path=Nombre}"></TextBlock>
+        <TextBlock Name="tblEdad" Text="{Binding ElementName=UserControl ,Path=Edad}"></TextBlock>
     </StackPanel>
 </UserControl>

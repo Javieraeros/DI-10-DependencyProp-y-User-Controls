@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI-10-DependencyProp y User Controls", "DI-10-DependencyProp y User Controls\DI-10-DependencyProp y User Controls.csproj", "{F1A114AE-FCC5-43E1-9816-CB63864B2ED4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo sencillo", "DI-10-DependencyProp y User Controls\Ejemplo sencillo.csproj", "{F1A114AE-FCC5-43E1-9816-CB63864B2ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
