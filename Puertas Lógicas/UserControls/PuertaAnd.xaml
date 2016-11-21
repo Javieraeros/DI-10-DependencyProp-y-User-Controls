@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Name="PuertaAndControl"
+    x:Class="Puertas_Lógicas.UserControls.PuertaAnd"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Puertas_Lógicas.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical">
+            <CheckBox Name="entA" IsChecked="{Binding ElementName=PuertaAndControl,Path=entradaA, Mode=TwoWay}"/>
+            <CheckBox Name="entB" IsChecked="{Binding ElementName=PuertaAndControl,Path=entradaB, Mode=TwoWay}"/>
+        </StackPanel>
+        <Image Name="imgAnd" Source="../Assets/and.png" Width="100" Height="200" VerticalAlignment="Top"/>
+    </StackPanel>
+</UserControl>

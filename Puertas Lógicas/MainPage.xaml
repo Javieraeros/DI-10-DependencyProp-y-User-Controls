@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Puertas_Lógicas.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Puertas_Lógicas"
+    xmlns:control="using:Puertas_Lógicas.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Name="Puertas" Orientation="Vertical">
+            <control:PuertaAnd x:Name="puerta1"/>
+            <control:PuertaAnd x:Name="puerta2"/>
+        </StackPanel>
+        <!--Resultado de la puerta lógica AND-->
+        <TextBlock Name="Resultado" Text="{Binding ElementName=puerta1,Path=Salida}"/>
+        <Button Name="CalculaResultado" Click="CalculaResultado_Click" Content="Púlsame"/>
+    </StackPanel>
+</Page>
